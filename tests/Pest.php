@@ -2,6 +2,6 @@
 
 declare(strict_types=1);
 
-use IllumaLaw\HealthCheckPgvector\Tests\TestCase;
+use IllumaLaw\HealthCheckRedis\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

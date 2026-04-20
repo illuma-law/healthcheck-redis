@@ -1,14 +1,13 @@
 {
-    "name": "illuma-law/healthcheck-pgvector",
-    "description": "Focused pgvector extension health check for Spatie's Laravel Health package.",
+    "name": "illuma-law/healthcheck-redis",
+    "description": "Focused redis extension health check for Spatie's Laravel Health package.",
     "keywords": [
         "illuma-law",
         "laravel",
         "health",
-        "pgvector",
-        "postgres"
+        "redis"
     ],
-    "homepage": "https://github.com/illuma-law/healthcheck-pgvector",
+    "homepage": "https://github.com/illuma-law/healthcheck-redis",
     "license": "MIT",
     "authors": [
         {
@@ -40,12 +39,12 @@
     },
     "autoload": {
         "psr-4": {
-            "IllumaLaw\\HealthCheckPgvector\\": "src/"
+            "IllumaLaw\\HealthCheckRedis\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "IllumaLaw\\HealthCheckPgvector\\Tests\\": "tests/"
+            "IllumaLaw\\HealthCheckRedis\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -66,7 +65,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "IllumaLaw\\HealthCheckPgvector\\HealthcheckPgvectorServiceProvider"
+                "IllumaLaw\\HealthCheckRedis\\HealthcheckRedisServiceProvider"
             ]
         }
     },
