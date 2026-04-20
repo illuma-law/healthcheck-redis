@@ -1,6 +1,6 @@
 {
     "name": "illuma-law/healthcheck-redis",
-    "description": "Focused redis extension health check for Spatie's Laravel Health package.",
+    "description": "Focused redis health check for Spatie's Laravel Health package.",
     "keywords": [
         "illuma-law",
         "laravel",
