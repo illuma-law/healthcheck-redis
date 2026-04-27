@@ -23,9 +23,9 @@ it('succeeds when redis is reachable', function () {
     $mockConnection->shouldReceive('ping')->once()->andReturn(true);
     $mockConnection->shouldReceive('info')->once()->with('memory')->andReturn([
         'used_memory_human' => '1.23M',
-        'maxmemory_human' => '100M',
-        'used_memory' => 1230000,
-        'maxmemory' => 100000000,
+        'maxmemory_human'   => '100M',
+        'used_memory'       => 1230000,
+        'maxmemory'         => 100000000,
     ]);
 
     Redis::shouldReceive('connection')->with('default')->once()->andReturn($mockConnection);
