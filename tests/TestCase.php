@@ -22,8 +22,8 @@ class TestCase extends Orchestra
     {
         $app['config']->set('database.redis.client', 'phpredis');
         $app['config']->set('database.redis.default', [
-            'host'     => env('REDIS_HOST', '127.0.0.1'),
-            'port'     => env('REDIS_PORT', '6379'),
+            'host' => env('REDIS_HOST', '127.0.0.1'),
+            'port' => env('REDIS_PORT', '6379'),
             'database' => '0',
         ]);
     }
